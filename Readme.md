@@ -16,10 +16,11 @@ Puedes conseguir el dataset completo y mayor informacióna acerca de la metodolog
 ------------------------------------------------------------------------
 
 
-# Jugadores & Nacionalidades: ¿Qué país aporta un mayor número de jugadores a las 5 grandes?
+# Jugadores & Nacionalidades: 
+## ¿Qué país aporta un mayor número de jugadores a las 5 grandes?
 Aporte de jugadores por pais a las 5 grandes ligas de Europa. 
 
 
-Jugadores
+Top 10 países que aporta el mayor número de jugadores a las 5 grandes ligas:
 ---------
-![Jugadores por nacionalidad.](img/jugadores.png)
+[Países y Frecuencia de jugadores](img/jugadores.png)
