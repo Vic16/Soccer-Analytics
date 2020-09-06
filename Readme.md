@@ -1,29 +1,27 @@
+
+## Soccer Analytics
+
+Este es un proyecto personal en el cual irÈ trabajando diferentes facetas del AED, en este documento armarÈ los links a diferentes carpetas con el cÛdigo fuente de cada tem·tica.
+
+La data utilizada en el presente repo fue liberada en el aÒo 2017 (el proveedor fue Wyscout) y el data set completo fue recopilado por Pappalardo et al.(2019) bajo CC BY 4.0 License para consulta p˙blica.
+
+Citas:
+
+- Pappalardo et al., (2019) A public data set of spatio-temporal match events in soccer competitions, Nature Scientific Data 6:236, https://www.nature.com/articles/s41597-019-0247-7
+
+- Pappalardo et al. (2019) PlayeRank: Data-driven Performance Evaluation and Player Ranking in Soccer via a Machine Learning Approach. ACM Transactions on Intellingent Systems and Technologies (TIST) 10, 5, Article 59 (September 2019), 27 pages. DOI: https://doi.org/10.1145/3343172
+
+Puedes conseguir el dataset completo en el siguiente [link](https://figshare.com/collections/Soccer_match_event_dataset/4415000)
+
 ------------------------------------------------------------------------
 
-`{r setup, include=FALSE, cache=TRUE} library(knitr) library(rmarkdown) library(tidyverse) library(ggplot2) library(kableExtra) library(jsonlite)`
 
-Carga de los datos
+Aporte de jugadores por pais a las 5 grandes ligas de Europa. 
 ------------------
 
-### Jugadores Data
-
-\`\`\`{r, cache=TRUE, include=TRUE, message=FALSE, warning=FALSE}
-players &lt;- fromJSON(‚Äúdata/players.json‚Äù)
-
-\`\`\`
 
 ------------------------------------------------------------------------
 
 Jugadores
 ---------
 ![Jugadores por nacionalidad.](img/jugadores.png)
-
-`{r, cache=TRUE, include=TRUE, message=FALSE, warning=FALSE} players$passportArea %>%   group_by(alpha3code) %>%   summarise(Frecuencia = n()) %>%   mutate(Porcentaje = round(prop.table(Frecuencia),2) * 100)%>%   arrange(desc(Porcentaje)) %>%   head(10) %>%   kable() %>%   kable_styling(bootstrap_options = "striped", full_width = F, position = "center")`
-
-Se aprecia como Espa√±a es el pa√≠s que aporta el mayor n√∫mero de
-jugadores a las cinco grandes ligas de Europa.
-
-
-![Caption for the picture.](img/Rplot.png)
-
-`{r, cache=TRUE, include=TRUE, message=FALSE, warning=FALSE} players$passportArea %>%   group_by(alpha3code) %>%   summarise(Frecuencia = n()) %>%   mutate(Porcentaje = round(prop.table(Frecuencia),2) * 100)%>%   arrange(desc(Porcentaje)) %>%   head(10) %>%   mutate(alpha3code = factor(alpha3code, levels=alpha3code)) %>%   ggplot(aes(x=alpha3code, y=Frecuencia)) +   geom_col(fill ="#0CA300") +   xlab("Pa√≠s") +   theme_minimal()`
