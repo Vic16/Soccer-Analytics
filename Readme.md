@@ -16,7 +16,7 @@ players &lt;- fromJSON(“data/players.json”)
 
 Jugadores
 ---------
-![Jugadores por nacionalidad.](img/jugadores.png)
+                                                            ![Jugadores por nacionalidad.](img/jugadores.png)
 
 `{r, cache=TRUE, include=TRUE, message=FALSE, warning=FALSE} players$passportArea %>%   group_by(alpha3code) %>%   summarise(Frecuencia = n()) %>%   mutate(Porcentaje = round(prop.table(Frecuencia),2) * 100)%>%   arrange(desc(Porcentaje)) %>%   head(10) %>%   kable() %>%   kable_styling(bootstrap_options = "striped", full_width = F, position = "center")`
 
