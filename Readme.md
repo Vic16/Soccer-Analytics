@@ -1,9 +1,9 @@
 
-## Soccer Analytics
+# Soccer Analytics
 
 Este es un proyecto personal en el cual iré trabajando diferentes facetas del AED, en este documento armaré los links a diferentes carpetas con el código fuente de cada temática.
 
-La data utilizada en el presente repo fue liberada en el año 2017 (el proveedor fue Wyscout) y el data set completo fue recopilado por Pappalardo et al.(2019) bajo CC BY 4.0 License para consulta pública.
+La data utilizada en el presente repo fue liberada en el año 2017 (el proveedor fue Wyscout) y el data set completo fue recopilado por Pappalardo et al.(2019) bajo CC BY 4.0 License para consulta pública, el mismo contiene información de eventos espacio temporales de las 5 principales ligas de Europa de la temporada 2017-2018.
 
 Citas:
 
@@ -11,16 +11,14 @@ Citas:
 
 - Pappalardo et al. (2019) PlayeRank: Data-driven Performance Evaluation and Player Ranking in Soccer via a Machine Learning Approach. ACM Transactions on Intellingent Systems and Technologies (TIST) 10, 5, Article 59 (September 2019), 27 pages. DOI: https://doi.org/10.1145/3343172
 
-Puedes conseguir el dataset completo en el siguiente [link](https://figshare.com/collections/Soccer_match_event_dataset/4415000)
+Puedes conseguir el dataset completo y mayor informacióna acerca de la metodología y medición en el siguiente [link](https://figshare.com/collections/Soccer_match_event_dataset/4415000)
 
 ------------------------------------------------------------------------
 
 
+# Jugadores & Nacionalidades: ¿Qué país aporta un mayor número de jugadores a las 5 grandes?
 Aporte de jugadores por pais a las 5 grandes ligas de Europa. 
-------------------
 
-
-------------------------------------------------------------------------
 
 Jugadores
 ---------
