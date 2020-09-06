@@ -23,6 +23,6 @@ Se aprecia como España es el país que aporta el mayor número de
 jugadores a las cinco grandes ligas de Europa.
 
 
-![Caption for the picture.](/rplot.png)
+![Caption for the picture.](img/rplot.png)
 
 `{r, cache=TRUE, include=TRUE, message=FALSE, warning=FALSE} players$passportArea %>%   group_by(alpha3code) %>%   summarise(Frecuencia = n()) %>%   mutate(Porcentaje = round(prop.table(Frecuencia),2) * 100)%>%   arrange(desc(Porcentaje)) %>%   head(10) %>%   mutate(alpha3code = factor(alpha3code, levels=alpha3code)) %>%   ggplot(aes(x=alpha3code, y=Frecuencia)) +   geom_col(fill ="#0CA300") +   xlab("País") +   theme_minimal()`
