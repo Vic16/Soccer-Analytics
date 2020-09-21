@@ -1,0 +1,30 @@
+---
+title: "Real_Madrid_Power_2017"
+author: "Victor Ayala"
+date: "20/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(jsonlite)
+library(ggsoccer)
+```
+
+```{r, cache}
+matches <- fromJSON("C:/Users/victor.ayala/OneDrive - Havas/Documents/2. Data Science - Personal - Proyectos/7.Soccer Analytics/Soccer_Analytics/Soccer-Analytics/data/matches/matches_Spain.json", flatten = TRUE)
+
+players <- read.csv("data/Real_Madrid_Players.csv")
+eventos <- fromJSON("data/eventos_real_madrid.json")
+```
+
+
+```{r}
+pases <-eventos %>%
+  filter(eventName %in% c("Pass"))
+  
+```
+
+
+
