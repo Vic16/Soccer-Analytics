@@ -1,9 +1,9 @@
 
 # Soccer Analytics
 
-Este es un proyecto personal en el cual iré trabajando diferentes facetas del AED, en este documento armaré los links a diferentes carpetas con el código fuente de cada temática.
+Este es un proyecto personal en el cual irÃ© trabajando diferentes facetas del AED, en este documento armarÃ© los links a diferentes carpetas con el cÃ³digo fuente de cada temÃ¡tica.
 
-La data utilizada en el presente repo fue liberada en el año 2017 (el proveedor fue Wyscout) y el data set completo fue recopilado por Pappalardo et al.(2019) bajo CC BY 4.0 License para consulta pública, el mismo contiene información de eventos espacio temporales de las 5 principales ligas de Europa de la temporada 2017-2018.
+La data utilizada en el presente repo fue liberada en el aÃ±o 2017 (el proveedor fue Wyscout) y el data set completo fue recopilado por Pappalardo et al.(2019) bajo CC BY 4.0 License para consulta pÃºblica, el mismo contiene informaciÃ³n de eventos espacio temporales de las 5 principales ligas de Europa de la temporada 2017-2018.
 
 Citas:
 
@@ -11,13 +11,15 @@ Citas:
 
 - Pappalardo et al. (2019) PlayeRank: Data-driven Performance Evaluation and Player Ranking in Soccer via a Machine Learning Approach. ACM Transactions on Intellingent Systems and Technologies (TIST) 10, 5, Article 59 (September 2019), 27 pages. DOI: https://doi.org/10.1145/3343172
 
-Puedes conseguir el dataset completo y mayor informacióna acerca de la metodología y medición en el siguiente [link](https://figshare.com/collections/Soccer_match_event_dataset/4415000)
+Puedes conseguir el dataset completo y mayor informaciÃ³na acerca de la metodologÃ­a y mediciÃ³n en el siguiente [link](https://figshare.com/collections/Soccer_match_event_dataset/4415000)
 
 ------------------------------------------------------------------------
 
 
-## Jugadores & Nacionalidades: ¿Qué país aporta un mayor número de jugadores a las 5 grandes?
+### Jugadores & Nacionalidades: Â¿QuÃ© paÃ­s aporta un mayor nÃºmero de jugadores a las 5 grandes?
 
-Top 10 países que aporta el mayor número de jugadores a las 5 grandes ligas
+Top 10 paÃ­ses que aporta el mayor nÃºmero de jugadores a las 5 grandes ligas
 
 ![Jugadores](img/jugadores.png)
+
+------------------------------------------------------------------------
